@@ -6,7 +6,7 @@
     {
       "type": "button",
       "actionType": "link",
-      "link": "/crud/list",
+      "link": "/product/list",
       "label": "返回列表"
     }
   ],
@@ -14,7 +14,7 @@
     {
       "title": "",
       "type": "form",
-      "redirect": "/crud/list",
+      "redirect": "/product/list",
       "name": "sample-edit-form",
       "api": "${API_HOST}/api/amis-mock/sample",
       "controls": [

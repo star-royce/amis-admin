@@ -1,7 +1,7 @@
 {
-  "name": "amis-boilerplate",
+  "name": "chocolate-forn",
   "version": "1.0.0",
-  "description": "基于 amis 的项目模板",
+  "description": "一个简单好用的商城管理系统",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

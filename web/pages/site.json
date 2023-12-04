@@ -1,0 +1,119 @@
+{
+  "status": 0,
+  "msg": "",
+  "data": {
+    "pages": [
+      {
+        "label": "Home",
+        "url": "/",
+        "redirect": "/index/home"
+      },
+      {
+        "label": "home",
+        "url": "index/home",
+        "schema": {
+          "type": "page",
+          "title": "Home",
+          "body": "Welcome to! Here is a system helpful for you to manage your business."
+        }
+      },
+      {
+        "label": "manager",
+        "children": [
+          {
+            "label": "Order",
+            "url": "/order",
+            "rewrite": "/order/list",
+            "icon": "fa fa-cube",
+            "children": [
+              {
+                "label": "列表",
+                "url": "/order/list",
+                "icon": "fa fa-list",
+                "schemaApi": "get:/pages/order/list.json"
+              },
+              {
+                "label": "查看",
+                "url": "/order/:id",
+                "schemaApi": "get:/pages/order/view.json"
+              }
+            ]
+          },
+          {
+            "label": "Product",
+            "url": "/product",
+            "rewrite": "/product/list",
+            "icon": "fa fa-cube",
+            "children": [
+              {
+                "label": "列表",
+                "url": "/product/list",
+                "icon": "fa fa-list",
+                "schemaApi": "get:/pages/product/list.json"
+              },
+              {
+                "label": "新增",
+                "url": "/product/add",
+                "icon": "fa fa-plus",
+                "schemaApi": "get:/pages/product/add.json"
+              },
+              {
+                "label": "查看",
+                "url": "/product/:id",
+                "schemaApi": "get:/pages/product/view.json"
+              },
+              {
+                "label": "修改",
+                "url": "/product/:id/edit",
+                "schemaApi": "get:/pages/product/edit.json"
+              }
+            ]
+          },
+          {
+            "label": "User",
+            "url": "/user",
+            "rewrite": "/user/list",
+            "icon": "fa fa-cube",
+            "children": [
+              {
+                "label": "列表",
+                "url": "/user/list",
+                "icon": "fa fa-list",
+                "schemaApi": "get:/pages/user/list.json"
+              },
+              {
+                "label": "新增",
+                "url": "/user/add",
+                "icon": "fa fa-plus",
+                "schemaApi": "get:/pages/user/add.json"
+              },
+              {
+                "label": "查看",
+                "url": "/user/:id",
+                "schemaApi": "get:/pages/user/view.json"
+              },
+              {
+                "label": "修改",
+                "url": "/user/:id/edit",
+                "schemaApi": "get:/pages/user/edit.json"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "dashbaard",
+        "children": [
+          {
+            "label": "Revenuer",
+            "schema": {
+              "type": "page",
+              "title": "Revenuer",
+              "body": "revenuer"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

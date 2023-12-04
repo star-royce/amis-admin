@@ -2,12 +2,12 @@
   "type": "page",
   "title": "列表",
   "remark": null,
-  "name": "page-demo",
+  "name": "order-list",
   "toolbar": [
     {
       "type": "button",
       "actionType": "link",
-      "link": "/crud/new",
+      "link": "/order/add",
       "label": "新增",
       "primary": true
     }
@@ -45,7 +45,7 @@
           "level": "primary",
           "dialog": {
             "title": "批量编辑",
-            "name": "sample-bulk-edit",
+            "name": "order-bulk-edit",
             "body": {
               "type": "form",
               "api": "${API_HOST}/api/amis-mock/sample/bulkUpdate2",
@@ -111,14 +111,7 @@
                   "label": "查看",
                   "level": "primary",
                   "actionType": "link",
-                  "link": "/crud/${id}"
-                },
-                {
-                  "type": "button",
-                  "label": "修改",
-                  "level": "info",
-                  "actionType": "link",
-                  "link": "/crud/${id}/edit"
+                  "link": "/order/${id}"
                 },
                 {
                   "type": "button",
